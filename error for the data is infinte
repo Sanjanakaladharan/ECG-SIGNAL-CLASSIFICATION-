@@ -1,0 +1,16 @@
+reference:Andreotti, F., Carr, O., Pimentel, M.A.F., Mahdi, A., & De Vos, M. (2017). 
+Comparing Feature Based Classifiers and Convolutional Neural Networks to Detect Arrhythmia from Short Segments of ECG. 
+In Computing in Cardiology. Rennes (France)
+
+while using the feature extraction technique reffered in this paper we will get an error of data is infinte
+this is because of the Nan values present in the signals
+
+so  we can remove the Nan values using these lines of code 
+
+LNaN=length(find(isnan(signal)));
+    if LNaN>0
+       signal(find(isnan(signal)))=0;
+    end
+    
+    in the matlab Feature Extraction file in the code given in https://github.com/fernandoandreotti/cinc-challenge2017
+    
