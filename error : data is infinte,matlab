@@ -5,7 +5,7 @@ In Computing in Cardiology. Rennes (France)
 while using the feature extraction technique reffered in this paper we will get an error of data is infinte
 this is because of the Nan values present in the signals
 
-so  we can remove the Nan values using these lines of code 
+so  we can remove the Nan values using these lines of code in matlab
 
 LNaN=length(find(isnan(signal)));
     if LNaN>0
