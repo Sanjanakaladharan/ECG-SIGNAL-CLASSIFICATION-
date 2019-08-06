@@ -12,5 +12,7 @@ LNaN=length(find(isnan(signal)));
        signal(find(isnan(signal)))=0;
     end
     
+    
     in the matlab Feature Extraction file in the code given in https://github.com/fernandoandreotti/cinc-challenge2017
+    signal is the orginal ECG signal
     
